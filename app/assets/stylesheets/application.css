@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+/* Ensure all thumbnails have the same size */
+.thumbnail {
+  width: 100px;  /* Set a fixed width */
+  height: 100px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image fills the space without distortion */
+  border-radius: 10px; /* Optional: adds rounded corners */
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Styling for better alignment */
+.links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.item a {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 10px;
+}

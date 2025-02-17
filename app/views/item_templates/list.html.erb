@@ -1,11 +1,11 @@
 <h1>Vivian Barclay</h1>
 
 <div class="links-container">
-  <% @list_of_items.each do |the_item| %>
+  <% @list_of_items.each do |item| %>
     <div class="item">
-      <img src="<%= the_item.thumbnail_url %>" alt="Thumbnail" class="thumbnail">
-      <a href="<%= the_item.link_url %>" target="_blank">
-        <%= the_item.link_description %>
+      <img src="<%= item.thumbnail_url %>" alt="Thumbnail" class="thumbnail">
+      <a href="<%= item.link_url %>" target="_blank">
+        <%= item.link_description %>
       </a>
     </div>
   <% end %>
